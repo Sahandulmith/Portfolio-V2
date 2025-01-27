@@ -22,9 +22,9 @@ node_modules
 *.sw?
 
 # Sublime Text files
-/dist
-src/assets/
-src/components/Commentar.jsx
-src/firebase-comment.js
-src/firebase.js
-/public
+# /dist
+# src/assets/
+# src/components/Commentar.jsx
+# src/firebase-comment.js
+# src/firebase.js
+# /public
