@@ -7,8 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "dependency_installation": "npm install --legacy-peer-deps"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
