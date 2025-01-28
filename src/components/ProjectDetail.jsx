@@ -7,6 +7,7 @@ import {
 import Swal from 'sweetalert2';
 import projectsData from "../data/projects.json";
 
+
 const TECH_ICONS = {
   React: Globe,
   Tailwind: Layout,
