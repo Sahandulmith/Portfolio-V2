@@ -1,12 +1,12 @@
 [
     {
-      "Img": "src/assets/Certificate/csharp.jpg"
+      "Img": "public/Certificate/csharp.jpg"
     },
     {
-      "Img": "src/assets/Certificate/oracle.png"
+      "Img": "public/Certificate/oracle.png"
     },
     {
-      "Img": "src/assets/Certificate/oracle2.png"
+      "Img": "public/Certificate/oracle2.png"
     }
   ]
   
