@@ -131,5 +131,32 @@
                     "Interactive Elements: Engage users with interactive elements like animations, transitions, and hover effects.",
                     "SEO Optimization: Implement SEO best practices to improve visibility and search engine rankings.",
                     "Social Media Integration: Connect with visitors through social media links and sharing options."]
+    },
+    {
+      "id": 10,
+      "Title": "Portfolio Website Updated",
+      "Description": "Project Based on React",
+      "Img": "myweb.png",
+      "Link": "https://sahandulmith-porfolio.netlify.app/",
+      "Github": "https://github.com/Sahandulmith/Portfolio-V2",
+      "TechStack": ["React", "Next.js","Node.js","Tailwind CSS","Firebase","Form mail"],
+      "Features": ["A user-friendly interface for intuitive navigation and seamless browsing",
+                    "A commenting section where visitors can share their feedback and thoughts",
+                    "Integration with React, Vite, and Firebase for smooth performance and real-time interactions",
+                    "Email submission for the contact form, making it easy to send messages directly",
+                    "Built with Tailwind CSS for a sleek, responsive, and visually appealing design"]
+    },
+    {
+      "id": 11,
+      "Title": "Food Ordering Web Application",
+      "Description": "With Microservices",
+      "Img": "spring.jpg",
+      "Link": "https://youtu.be/dFGS0PhWQeQ?si=2rd8PMpZgPaA2mfh",
+      "Github": "https://github.com/Sahandulmith",
+      "TechStack": ["Spring Boot", "Spring Cloud", "JWT", "MySQL", "React", "Material UI", "Docker", "AWS EC2", "Postman", "Swagger" ],
+      "Features": ["Secured auth with JWT & Spring Security",
+                    "Streamlined payments via Stripe integration",
+                    "Dockerized deployment for consistency",
+                    "Real-time notifications & API docs with Swagger" ]
     }
   ]
