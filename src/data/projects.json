@@ -158,5 +158,20 @@
                     "Streamlined payments via Stripe integration",
                     "Dockerized deployment for consistency",
                     "Real-time notifications & API docs with Swagger" ]
+    },
+    {
+      "id": 12,
+      "Title": "Automated Cocktail Machine",
+      "Description": "Project Based on Arduino (Group)",
+      "Img": "aurdino.png",
+      "Link": "https://youtu.be/Rwgft54smzw?si=SS7AOXmzk0Cow_mv",
+      "Github": "https://github.com/Sahandulmith/Cocktail-Machine",
+      "TechStack": ["Arduino", "Flutter", "Servo Motors", "Pumps", "Sensors", "LEDs", "Relays"],
+      "Features": ["Custom Cocktail Creation: Mix and match ingredients to create unique cocktails.",
+                    "Automated Dispensing: Accurately measure and dispense liquids with servo motors and pumps.",
+                    "User-Friendly Interface: Select cocktails and customize ingredients using a mobile app.",
+                    "Real-Time Monitoring: Track ingredient levels, dispensing status, and machine health.",
+                    "Safety Features: Emergency stop button, overflow sensors, and safety interlocks for user protection.",
+                    "Customizable Recipes: Add, edit, and save cocktail recipes for future use."]
     }
   ]

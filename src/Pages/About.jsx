@@ -214,9 +214,8 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-              A versatile and highly skilled software developer with expertise across both frontend and backend technologies. I have experience building efficient, user-friendly applications that solve real-world problems. My skills include proficiency in languages like JavaScript, Python, Java, and C#, and I specialize in full-stack development using modern frameworks like React, Next.js, and Flutter for dynamic web and mobile apps. I also leverage backend technologies like Node.js, Express, and Firebase to create scalable server-side applications and RESTful APIs.
-              My projects often involve database management with SQL and NoSQL systems, cloud deployments on AWS, Google Cloud, and Azure, as well as Docker for seamless application deployment. I have developed a wide range of applications, from enterprise systems to financial and SMS-based communication tools using GSM modems. Additionally, I have hands-on experience in face recognition systems and other machine learning applications.
-              With a strong focus on delivering impactful solutions, I emphasize clean, efficient code and utilize tools like Jest for testing and Webpack for optimization. Whether working on a complex backend system or creating intuitive user interfaces, I am passionate about delivering high-quality software that exceeds expectations.
+              A highly skilled full-stack software developer with a passion for building efficient and scalable applications across various platforms. My expertise spans multiple programming languages, frameworks, and tools, enabling me to craft tailored solutions for both frontend and backend development.
+              Check out my projects.
             </p>
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
