@@ -2,7 +2,7 @@
     {
       "id": 1,
       "Title": "Point Of Sale System",
-      "Description": "C# Project (Individual)",
+      "Description": "C# Project",
       "Img": "csharpp.jpg",
       "Link": "https://youtu.be/-GqhJ5CbBoA?si=3IgEO0nvoAr4c4mZ",
       "Github": "https://github.com/Sahandulmith/GUI-Application",
@@ -12,7 +12,7 @@
     {
       "id": 2,
       "Title": "E-Commerce Web Site",
-      "Description": "Project Based on HTML,CSS,Js (Individual)",
+      "Description": "Project Based on HTML,CSS,Js",
       "Img": "html css.jpg",
       "Link": "https://youtu.be/3j4SF0fYYTM?si=5C4edcPWFz0KGkqd",
       "Github": "https://github.com/Sahandulmith/HTML-Project",
@@ -29,7 +29,7 @@
     {
       "id": 3,
       "Title": "Point Of Sale System",
-      "Description": "Java Project (Individual)",
+      "Description": "Java Project",
       "Img": "java.jpg",
       "Link": "https://youtu.be/4hB7ECNBcLY?si=Kx6ozHwxFqo3vuFG",
       "Github": "https://github.com/Sahandulmith/JAVA-EAD1",
@@ -43,7 +43,7 @@
     {
       "id": 4,
       "Title": "Vating System",
-      "Description": "Project Based on PHP (Individual)",
+      "Description": "Project Based on PHP",
       "Img": "php.jpg",
       "Link": "https://youtu.be/03Rv1aYcAHY?si=RZFmUTWyM9LnYi4J",
       "Github": "https://github.com/Sahandulmith/Voting-System",
@@ -59,7 +59,7 @@
     {
       "id": 5,
       "Title": "System for Marking Attendance",
-      "Description": "Face Recognize (Individual)",
+      "Description": "Face Recognize",
       "Img": "python.jpg",
       "Link": "https://youtu.be/z6dy76Ie7E8?si=m85p2_mNq0gclcY1",
       "Github": "https://github.com/Sahandulmith/PYTHON",
@@ -89,7 +89,7 @@
     {
       "id": 7,
       "Title": "Portfolio Website",
-      "Description": "Project Based on React (Individual)",
+      "Description": "Project Based on React",
       "Img": "react.png",
       "Link": "https://sahandulmith.github.io/Portfolio-Website/",
       "Github": "https://github.com/Sahandulmith/Portfolio-Website",

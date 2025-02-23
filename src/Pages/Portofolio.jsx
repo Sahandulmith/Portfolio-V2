@@ -101,24 +101,41 @@ function a11yProps(index) {
 }
 
 const techStacks = [
-  { icon: "python.svg", language: "Python" },
-  { icon: "java.svg", language: "Java" },
-  { icon: "spring.svg", language: "Spring Boot" },
-  { icon: "php.svg", language: "PHP" },
-  { icon: "csharp.svg", language: "C#" },
-  { icon: "flutter.svg", language: "Flutter" },
-  { icon: "html.svg", language: "HTML" },
-  { icon: "css.svg", language: "CSS" },
-  { icon: "javascript.svg", language: "JavaScript" },
-  { icon: "tailwind.svg", language: "Tailwind CSS" },
-  { icon: "reactjs.svg", language: "ReactJS" },
-  { icon: "vite.svg", language: "Vite" },
-  { icon: "nodejs.svg", language: "Node JS" },
-  { icon: "bootstrap.svg", language: "Bootstrap" },
-  { icon: "mysql.svg", language: "MySQL" },
-  { icon: "firebase.svg", language: "Firebase" },
-  { icon: "sqlserver.svg", language: "SQL Server" },
+  { icon: "python.svg", language: "Python", category: "Backend" },
+  { icon: "java.svg", language: "Java", category: "Backend" },
+  { icon: "spring.svg", language: "Spring Boot", category: "Backend" },
+  { icon: "php.svg", language: "PHP", category: "Backend" },
+  { icon: "csharp.svg", language: "C#", category: "Backend" },
+  { icon: "flutter.svg", language: "Flutter", category: "Mobile" },
+  { icon: "html.svg", language: "HTML", category: "Frontend" },
+  { icon: "css.svg", language: "CSS", category: "Frontend" },
+  { icon: "javascript.svg", language: "JavaScript", category: "Frontend" },
+  { icon: "tailwind.svg", language: "Tailwind CSS", category: "Frontend" },
+  { icon: "reactjs.svg", language: "ReactJS", category: "Frontend" },
+  { icon: "vite.svg", language: "Vite", category: "Frontend" },
+  { icon: "nextjs.png", language: "Next.js", category: "Frontend" },
+  { icon: "jquery.png", language: "jQuery", category: "Frontend" },
+  { icon: "nodejs.svg", language: "Node JS", category: "Backend" },
+  { icon: "bootstrap.svg", language: "Bootstrap", category: "Frontend" },
+  { icon: "mysql.svg", language: "MySQL", category: "Database" },
+  { icon: "firebase.svg", language: "Firebase", category: "Database" },
+  { icon: "sqlserver.svg", language: "SQL Server", category: "Database" },
+  { icon: "supabase.png", language: "Supabase", category: "Database" },
+  { icon: "oracledb.png", language: "OracleDB", category: "Database" },
+  { icon: "mongodb.png", language: "MongoDB", category: "Database" },
+  { icon: "git.png", language: "Git", category: "Others" },
+  { icon: "github.png", language: "GitHub", category: "Others" },
+  { icon: "docker.png", language: "Docker", category: "Others" },
+  { icon: "aws.png", language: "AWS", category: "Others" },
+  { icon: "azure.png", language: "Azure", category: "Others" },
+  { icon: "netlify.png", language: "Netlify", category: "Others" },
+  { icon: "figma.png", language: "Figma", category: "Others" },
+  { icon: "postman.png", language: "Postman", category: "Others" },
+  { icon: "figma.png", language: "Figma", category: "Others" },
+  { icon: "discord.png", language: "Discord", category: "Others" },
+  { icon: "stackoverflow.png", language: "Stackoverflow", category: "Others" },
 ];
+const categories = ["Frontend", "Backend", "Mobile", "Database", "Others"];
 
 export default function FullWidthTabs() {
   const theme = useTheme();
@@ -127,6 +144,7 @@ export default function FullWidthTabs() {
   const [certificates, setCertificates] = useState([]);
   const [showAllProjects, setShowAllProjects] = useState(false);
   const [showAllCertificates, setShowAllCertificates] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState("Frontend");
   const isMobile = window.innerWidth < 768;
   const initialItems = isMobile ? 4 : 6;
 
@@ -156,6 +174,9 @@ export default function FullWidthTabs() {
 
   const displayedProjects = showAllProjects ? projects : projects.slice(0, initialItems);
   const displayedCertificates = showAllCertificates ? certificates : certificates.slice(0, initialItems);
+  const filteredTechStacks = techStacks.filter(
+    (stack) => stack.category === selectedCategory
+  );
 
   return (
     <div className="md:px-[10%] px-[5%] w-full sm:mt-0 mt-[3rem] bg-[#030014] overflow-hidden" id="Portofolio">
@@ -326,15 +347,41 @@ export default function FullWidthTabs() {
           </TabPanel>
 
           <TabPanel value={value} index={2} dir={theme.direction}>
+            {/* Category Filter Buttons */}
+            <div className="flex flex-wrap gap-2 mb-4 justify-center items-center gap-2 mb-4">
+              {categories.map((cat) => (
+                <button
+                  key={cat}
+                  onClick={() => setSelectedCategory(cat)}
+                  className={`
+                    px-4 py-2 rounded-md
+                    ${
+                      selectedCategory === cat
+                        ? "bg-purple-600 text-white"
+                        : "bg-white/5 text-slate-300"
+                    }
+                  `}
+                >
+                  {cat}
+                </button>
+              ))}
+            </div>
+
+            {/* Filtered Tech Stacks */}
             <div className="container mx-auto flex justify-center items-center overflow-hidden pb-[5%]">
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 lg:gap-8 gap-5">
-                {techStacks.map((stack, index) => (
+                {filteredTechStacks.map((stack, index) => (
                   <div
                     key={index}
-                    data-aos={index % 3 === 0 ? "fade-up-right" : index % 3 === 1 ? "fade-up" : "fade-up-left"}
+                    data-aos={
+                      index % 3 === 0 ? "fade-up-right" : index % 3 === 1 ? "fade-up" : "fade-up-left"
+                    }
                     data-aos-duration={index % 3 === 0 ? "1000" : index % 3 === 1 ? "1200" : "1000"}
                   >
-                    <TechStackIcon TechStackIcon={stack.icon} Language={stack.language} />
+                    <TechStackIcon
+                      TechStackIcon={stack.icon}
+                      Language={stack.language}
+                    />
                   </div>
                 ))}
               </div>
