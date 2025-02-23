@@ -131,7 +131,6 @@ const techStacks = [
   { icon: "netlify.png", language: "Netlify", category: "Others" },
   { icon: "figma.png", language: "Figma", category: "Others" },
   { icon: "postman.png", language: "Postman", category: "Others" },
-  { icon: "figma.png", language: "Figma", category: "Others" },
   { icon: "discord.png", language: "Discord", category: "Others" },
   { icon: "stackoverflow.png", language: "Stackoverflow", category: "Others" },
 ];
