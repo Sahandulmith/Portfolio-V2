@@ -173,5 +173,26 @@
                     "Real-Time Monitoring: Track ingredient levels, dispensing status, and machine health.",
                     "Safety Features: Emergency stop button, overflow sensors, and safety interlocks for user protection.",
                     "Customizable Recipes: Add, edit, and save cocktail recipes for future use."]
+    },
+    {
+      "id": 13,
+      "Title": "Urban Food E-Commerce Website",
+      "Description": "Project Based on React,OracleDB and MongoDB (Group)",
+      "Img": "dm.jpg",
+      "Link": "https://youtu.be/AWD9qrHIxKg",
+      "Github": "https://github.com/Sahandulmith/Urban-Food",
+      "TechStack": ["React", "Node.js", "Express", "OracleDB", "MongoDB", "Material UI", "Postman", "Swagger"],
+      "Features": ["User Authentication: Secure login and registration with JWT.",
+                    "Product Management: Add, edit, and delete products with real-time updates.",
+                    "Shopping Cart: Seamless product addition and checkout process.",
+                    "Order Tracking: Real-time order status updates and notifications.",
+                    "Admin Dashboard: Manage users, products, and orders efficiently.",
+                    "Responsive Design: Optimized for all devices, ensuring a great experience on mobile, tablet, and desktop.",
+                    "SEO Optimization: Implement SEO best practices to improve visibility and search engine rankings.",
+                    "Payment Integration: Secure payment processing with multiple options.",
+                    "Real-Time Notifications: Instant updates on order status and promotions.",
+                    "Analytics Dashboard: Insights into user behavior, sales trends, and product performance.",
+                    "Customer Reviews: Allow users to leave feedback and ratings for products."
+                    ]
     }
   ]
