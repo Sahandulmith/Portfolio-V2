@@ -25,6 +25,8 @@ const Certificate = ({ ImgSertif }) => {
 					borderRadius: 2,
 					boxShadow: "0 8px 16px rgba(0,0,0,0.1)",
 					transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+					// Fixed aspect ratio container (4:3 ratio)
+					aspectRatio: "4/3",
 					"&:hover": {
 						transform: "translateY(-5px)",
 						boxShadow: "0 12px 24px rgba(0,0,0,0.2)",
@@ -44,6 +46,8 @@ const Certificate = ({ ImgSertif }) => {
 				<Box
 					sx={{
 						position: "relative",
+						width: "100%",
+						height: "100%",
 						"&::before": {
 							content: '""',
 							position: "absolute",
@@ -61,7 +65,7 @@ const Certificate = ({ ImgSertif }) => {
 						alt="Certificate"
 						style={{
 							width: "100%",
-							height: "auto",
+							height: "100%",
 							display: "block",
 							objectFit: "cover",
 							filter: "contrast(1.10) brightness(0.9) saturate(1.1)",
